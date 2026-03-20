@@ -1,0 +1,200 @@
+/* ── Table wrapper ────────────────────────────────────────── */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 3rem;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.standings-table thead {
+  background: #111827;
+}
+
+.standings-table th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #6b7a9b;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+}
+
+.standings-table td {
+  padding: 0.8rem 1rem;
+  color: #c0c8d8;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: middle;
+}
+
+.standings-table tbody tr {
+  background: #1e2740;
+  transition: background 0.15s ease;
+}
+
+.standings-table tbody tr:hover {
+  background: #243050;
+}
+
+.standings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.row--top3 td {
+  background: rgba(230,57,70,0.04);
+}
+
+/* Position badge */
+.pos-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: rgba(255,255,255,0.07);
+  color: #c0c8d8;
+}
+
+.rider-name {
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.pts-cell {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #e63946 !important;
+}
+
+/* column widths */
+.col-pos   { width: 50px;  }
+.col-wins  { width: 60px;  text-align: center; }
+.col-podiums { width: 80px; text-align: center; }
+.col-pts   { width: 70px;  text-align: right;  }
+
+/* ── Results section ──────────────────────────────────────── */
+.results-section {
+  margin-top: 1rem;
+}
+
+.results-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 1.5rem;
+}
+
+/* No results placeholder */
+.no-results {
+  background: #1e2740;
+  border: 1px dashed rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.no-results__icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.no-results p {
+  color: #8a95b0;
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.no-results strong {
+  color: #c0c8d8;
+}
+
+/* Round blocks */
+.round-block {
+  background: #1e2740;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.round-block__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.round-block__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #e63946;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.round-block__venue {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.round-block__date {
+  color: #8a95b0;
+  font-size: 0.85rem;
+  margin-left: auto;
+}
+
+.race-result {
+  margin-bottom: 1rem;
+}
+
+.race-result__title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #c0c8d8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.result-table th,
+.result-table td {
+  padding: 0.4rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: #c0c8d8;
+}
+
+.result-table th {
+  color: #6b7a9b;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+/* ── Points note ──────────────────────────────────────────── */
+.points-note {
+  color: #6b7a9b;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}

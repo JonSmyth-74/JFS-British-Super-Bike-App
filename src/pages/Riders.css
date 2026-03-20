@@ -1,0 +1,83 @@
+.riders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.rider-card {
+  background: #1e2740;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rider-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.rider-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 14px 14px 0 0;
+}
+
+.rider-card__number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.08);
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.rider-card__name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.5rem 0 0.2rem;
+  padding-right: 3rem;
+}
+
+.rider-card__nationality {
+  color: #8a95b0;
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.rider-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 0.85rem;
+}
+
+.rider-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.rider-detail-label {
+  color: #6b7a9b;
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.rider-detail-value {
+  color: #c0c8d8;
+  font-weight: 500;
+  text-align: right;
+}
