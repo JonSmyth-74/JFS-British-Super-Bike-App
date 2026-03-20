@@ -1,0 +1,258 @@
+.league-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Tab bar */
+.tab-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background: #1e2740;
+  padding: 0.4rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.tab-btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: #8892b0;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  color: #cdd6f4;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #e8a000, #ff6b00);
+  color: #fff;
+}
+
+/* Standings table */
+.standings-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #2d3a5e;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.standings-table thead tr {
+  background: #0f3460;
+}
+
+.standings-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #8892b0;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.standings-table tbody tr {
+  border-bottom: 1px solid #2d3a5e;
+  transition: background 0.15s;
+}
+
+.standings-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.standings-table tbody tr:hover {
+  background: rgba(255, 107, 0, 0.05);
+}
+
+.standings-table td {
+  padding: 0.75rem 1rem;
+  color: #cdd6f4;
+  vertical-align: middle;
+}
+
+.standings-table tbody tr.top-1 {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.08), transparent);
+}
+
+.standings-table tbody tr.top-2 {
+  background: linear-gradient(90deg, rgba(192, 192, 192, 0.06), transparent);
+}
+
+.standings-table tbody tr.top-3 {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.06), transparent);
+}
+
+.pos-cell {
+  font-size: 1.1rem;
+  width: 3rem;
+}
+
+.rider-num {
+  color: #ff9d00;
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-right: 0.4rem;
+}
+
+.rider-nm {
+  font-weight: 600;
+  color: #fff;
+}
+
+.team-cell {
+  color: #8892b0 !important;
+  font-size: 0.85rem;
+}
+
+.bike-cell {
+  color: #637080 !important;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.wins-cell,
+.podiums-cell {
+  text-align: center;
+  font-weight: 600;
+}
+
+.points-cell {
+  font-weight: 800;
+  color: #ff9d00 !important;
+  font-size: 1.05rem;
+  text-align: right;
+}
+
+/* Results section */
+.round-selector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.round-btn {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #2d3a5e;
+  background: #1e2740;
+  color: #8892b0;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.4;
+  transition: all 0.2s;
+}
+
+.round-btn:hover {
+  border-color: #ff6b00;
+  color: #ff9d00;
+}
+
+.round-btn.active {
+  background: rgba(255, 107, 0, 0.15);
+  border-color: #ff6b00;
+  color: #ff9d00;
+}
+
+.round-circuit {
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
+.races-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.race-result-card {
+  background: #1e2740;
+  border: 1px solid #2d3a5e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.race-label {
+  background: #0f3460;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.result-table th {
+  padding: 0.5rem 0.75rem;
+  color: #556;
+  font-size: 0.78rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.result-table td {
+  padding: 0.55rem 0.75rem;
+  color: #cdd6f4;
+  border-bottom: 1px solid #22304a;
+}
+
+.result-table tr:last-child td {
+  border-bottom: none;
+}
+
+.result-table tr.podium-1 td { background: rgba(255, 215, 0, 0.07); }
+.result-table tr.podium-2 td { background: rgba(192, 192, 192, 0.05); }
+.result-table tr.podium-3 td { background: rgba(205, 127, 50, 0.05); }
+
+.res-points {
+  color: #68d391 !important;
+  font-weight: 700;
+  text-align: right;
+}
+
+.no-results-msg {
+  text-align: center;
+  color: #8892b0;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .league-page {
+    padding: 1rem;
+  }
+  .page-header h1 {
+    font-size: 1.7rem;
+  }
+  .team-cell,
+  .bike-cell {
+    display: none;
+  }
+  .tab-bar {
+    width: 100%;
+  }
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
