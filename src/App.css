@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #121829;
+  color: #cdd6f4;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1.25rem;
+  background: #0a0f1e;
+  color: #3d4f7c;
+  font-size: 0.82rem;
+  border-top: 1px solid #1e2740;
+}
